@@ -1,8 +1,8 @@
-# Trilha de Língua Portuguesa
+# Portal de estudos · Bolsa INVEST 2027
 
-Portal de estudos para a Avaliação Diagnóstica do 9º ano (Campanha de Bolsa Educacional INVEST 2027).
+Trilha de Língua Portuguesa: portal de estudos para a Avaliação Diagnóstica do 9º ano (Campanha de Bolsa Educacional INVEST 2027).
 
-**Acesse:** https://faraujo2311.github.io/trilha-lingua-portuguesa/
+**Acesse:** https://faraujo2311.github.io/portal_estudos_bolsa_2027/
 
 ## Como atualizar o portal
 

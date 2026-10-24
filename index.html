@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trilha de Língua Portuguesa</title>
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: #fff; color: #1D2330; padding: 24px; }
+  main { max-width: 520px; text-align: center; }
+  h1 { font-size: 28px; margin: 0 0 12px; }
+  p { color: #5E6675; line-height: 1.6; }
+  a { display: inline-block; margin-top: 12px; padding: 12px 20px; border-radius: 12px; background: #2F4BBF; color: #fff; text-decoration: none; }
+  @media (prefers-color-scheme: dark) { body { background: #14161C; color: #E9EBF0; } p { color: #A3A9B6; } a { background: #8EA2FF; color: #14161C; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Trilha de Língua Portuguesa</h1>
+  <p id="msg">Abrindo o portal…</p>
+  <a href="portal_lingua_portuguesa.html">Abrir o portal</a>
+</main>
+<script>
+  var alvo = "portal_lingua_portuguesa.html" + location.hash;
+  fetch("portal_lingua_portuguesa.html", { method: "HEAD", cache: "no-store" })
+    .then(function (r) {
+      if (r.ok) location.replace(alvo);
+      else document.getElementById("msg").textContent = "O arquivo do portal ainda não foi enviado ao repositório. Envie portal_lingua_portuguesa.html e aguarde um ou dois minutos.";
+    })
+    .catch(function () { location.replace(alvo); });
+</script>
+</body>
+</html>
